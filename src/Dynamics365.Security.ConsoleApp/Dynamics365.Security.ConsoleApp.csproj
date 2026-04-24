@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>Dynamics365.Security.ConsoleApp</AssemblyName>
+    <RootNamespace>Dynamics365.Security.ConsoleApp</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <Nullable>disable</Nullable>
+    <Description>Console application demonstrating the Dynamics365.Security library</Description>
+    <StartupObject>Dynamics365.Security.ConsoleApp.Program</StartupObject>
+  </PropertyGroup>
+
+  <!-- Reference assemblies that allow building net462 on Linux / macOS -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net462"
+                      Version="1.0.3"
+                      PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- Reference the library project -->
+  <ItemGroup>
+    <ProjectReference Include="..\Dynamics365.Security\Dynamics365.Security.csproj" />
+  </ItemGroup>
+
+</Project>

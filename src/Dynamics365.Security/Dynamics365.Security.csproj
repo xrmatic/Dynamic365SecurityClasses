@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>Dynamics365.Security</AssemblyName>
+    <RootNamespace>Dynamics365.Security</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Description>Dynamics 365 security role and permission query classes for .NET 4.6.2</Description>
+    <Company>xrmatic</Company>
+    <Copyright>Copyright (c) xrmatic 2024</Copyright>
+  </PropertyGroup>
+
+  <!-- Reference assemblies that allow building net462 on Linux / macOS -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net462"
+                      Version="1.0.3"
+                      PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- CRM SDK -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies"
+                      Version="9.0.2.51" />
+    <PackageReference Include="Microsoft.CrmSdk.XrmTooling.CoreAssembly"
+                      Version="9.1.1.65" />
+  </ItemGroup>
+
+</Project>
